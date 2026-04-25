@@ -1,0 +1,87 @@
+
+<!--
+Name: Karanveer Singh
+Date: 21 April 2026
+Description: This page includes a contact form where users can enter their details and send a message, with basic validation applied.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Karanveer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  
+  <aside id="sidebar">
+    <div class="sidebar-name">Karanveer</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </aside>
+
+  
+  <div id="content">
+
+  
+    <section class="section">
+      <h2>Contact Me</h2>
+      <p style="margin-bottom: 28px; color: #555;">
+        Fill out the form below to get in touch. All fields are required.
+      </p>
+
+     
+      <form id="contact-form" novalidate>
+
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" />
+        </div>
+
+          <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="10-digit number" maxlength="10" />
+        </div>
+
+      
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write your message here..."></textarea>
+        </div>
+
+   
+        <div class="btn-row">
+          <button type="submit">Send Message</button>
+          <button type="reset">Reset</button>
+        </div>
+
+      </form>
+
+      <div id="success-msg">
+        Your message was sent successfully. Thank you!
+      </div>
+
+    </section>
+
+
+    <footer id="footer">
+      &copy; 2026 Karanveer &mdash; Semester 1 Final Project
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
